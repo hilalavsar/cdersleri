@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+
+{
+    float maas1,maas2,zamlimaas1,zamlimaas2,maaslarintoplami,faturalar,zam,kira,vergi,taksitler,harclik;
+
+    printf("********EV BUTCESI********\n\n\n");
+
+    printf("Aylik eve giren maasi giriniz.\n");
+    scanf("%f",&maas1);
+    printf("maas1:%.3f \n\n",maas1);
+
+    zamlimaas1 = maas1 +(maas1)/2;
+    printf("%.3f\n\n",maas1+((maas1)/2));
+
+    printf("Aylik eve giren diger maasi giriniz.\n");
+    scanf("%f",&maas2);
+    printf("maas2:%.3f \n\n",maas2);
+
+    zamlimaas2 = maas2 +(maas2)/2;
+    printf("%.3f\n\n",maas2+((maas2)/2));
+
+    maaslarintoplami= zamlimaas1+zamlimaas2;
+    printf("maaslarin toplami= %.3f\n\n",zamlimaas1+zamlimaas2);
+
+    printf("Aylik fatura tutarinizi giriniz.\n");
+    scanf("%f",&faturalar);
+    printf("faturalar:%.3f \n\n",faturalar);
+
+    printf("Aylik cocuklara verilen harclik tutarini giriniz.\n");
+    scanf("%f",&harclik);
+    printf("harclik: %.3f \n\n",harclik);
+
+    printf("Aylik kira bedelini giriniz.\n");
+    scanf("%f",&kira);
+    printf("harclik:%.3f \n\n",kira);
+
+    printf("butce son durum : %.3f\n\n",(maaslarintoplami-(faturalar+zam+kira+vergi+taksitler+harclik)));
+
+
+    return 0;
+}
