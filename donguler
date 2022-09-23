@@ -1,0 +1,18 @@
+#include <locale.h>
+//do-while dongusu
+int main() {
+  int i = 10;
+  while (i < 10) {
+    printf("While %d\n", i);
+    i++;
+  }
+  printf("\n");
+
+  int a = 10;
+  do {
+    printf("Do-while %d\n", a);
+    a++;
+
+  } while (a < 10);
+  return 0;
+}
